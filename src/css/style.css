@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap');
+
+body {
+    height: 100vh;
+    background-color: rgba(237, 242, 248, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Barlow Semi Condensed';
+}
+
+.container {
+    height: auto;
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(4, 1fr);
+    grid-gap: 35px;
+}
+
+section {
+    border-radius: 22px;
+}
+
+section .profile {
+    display: flex;
+}
+
+section .profile img {
+    border-radius: 50%;
+}
+
+.daniel {
+    background-color: rgba(115, 63, 200, 1);
+    color: #ffffff;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.jonathan {
+    background-color: rgba(73, 85, 107, 1);
+    color: #ffffff;
+    grid-area: 1 / 3 / 1 / 4;
+}
+
+.jeanette {
+    background-color: #ffffff;
+    color: rgba(57, 63, 71, 1);
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.patrick {
+    background-color: rgba(24, 32, 45, 1);
+    color: rgba(225, 232, 242, 1);
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.kira {
+    background-color: #ffffff;
+    color: rgba(57, 63, 71, 1);
+    grid-area: 1 / 4 / 3 / 5;
+}
+
+footer {
+    align-self: center;
+}
