@@ -4,34 +4,56 @@ body {
     height: 100vh;
     background-color: rgba(237, 242, 248, 1);
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    justify-content: center;
-    font-family: 'Barlow Semi Condensed';
+    font-family: 'Barlow Semi Condensed', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
-    height: auto;
     display: grid;
-    grid-template: repeat(2, auto) / repeat(4, 1fr);
-    grid-gap: 35px;
+    grid-template: repeat(3, auto) / repeat(4, 1fr);
+    grid-gap: 22px;
+    margin: 60px;
 }
 
 section {
     border-radius: 22px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 31px;
 }
 
 section .profile {
     display: flex;
+    align-items: center;
+    gap: 22px;
+    font-weight: 500;
+    margin-bottom: 22px;
 }
 
 section .profile img {
     border-radius: 50%;
 }
 
+.daniel img, .patrick img {
+    border: 2px solid #A775F1;
+}
+
+.kira img, .jonathan img, .jeanette img {
+    border: 2px solid hsl(210, 46%, 95%);
+}
+
+section .profile .verified {
+    opacity: 50%;
+    margin-top: 4px;
+}
+
 .daniel {
-    background-color: rgba(115, 63, 200, 1);
     color: #ffffff;
     grid-area: 1 / 1 / 2 / 3;
+    background: url(../images/bg-pattern-quotation.svg);
+    background-position: right 17% top 9%;
+    background-repeat: no-repeat;
+    background-color: rgba(115, 63, 200, 1);
 }
 
 .jonathan {
@@ -56,8 +78,67 @@ section .profile img {
     background-color: #ffffff;
     color: rgba(57, 63, 71, 1);
     grid-area: 1 / 4 / 3 / 5;
+    max-width: 350px;
+}
+
+.testimonial h2 {
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.testimonial p {
+    font-weight: 400;
+    opacity: 70%;
+    font-size: 1rem;
 }
 
 footer {
-    align-self: center;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+a {
+    color: #A775F1;
+    transition: 0.1s;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+@media (max-width:950px) {
+    .daniel {
+        grid-area: daniel;
+    } 
+    .jonathan {
+        grid-area: jonathan;
+    }
+    .jeanette {
+        grid-area: jeanette;
+    }
+    .patrick {
+        grid-area: patrick;
+    }
+    .kira {
+        grid-area: kira;
+        max-width: none;
+    }
+    
+    .container {
+        grid-template: repeat(5, auto) / auto;
+        margin: 20px 60px;
+        grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira";
+    }
+}
+
+@media (max-width:440px) {
+
+    .container {
+        margin: 26px;
+    }
 }
