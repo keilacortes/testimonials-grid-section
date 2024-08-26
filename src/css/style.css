@@ -92,9 +92,9 @@ section .profile .verified {
     font-size: 1rem;
 }
 
-footer {
+footer p{
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 a {
