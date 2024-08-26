@@ -21,6 +21,6 @@ This project is designed to simulate a testimonials section on a website. The pa
 
 ### Links
 
-🔗 [Frontend Mentor Challenge]((https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)) 
+🔗 [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7) 
 📂 [GitHub Repository](https://github.com/keilacortes/testimonials-grid-section)
 🌐 [Live Demo](https://keilacortes.github.io/testimonials-grid-section/)
